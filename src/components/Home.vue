@@ -3,11 +3,11 @@
         <v-form>
             <v-file-input 
                 label="Seleciona o arquivo"
-                append-icon="mdi-send"
+                append-outer-icon="mdi-send"
                 multiple 
                 chips 
                 v-model="files"
-                @click:append="processaArquivo" />
+                @click:append-outer="processaArquivo" />
 
             
         </v-form>
@@ -18,26 +18,26 @@
 </template>
 
 <script>
+import {ipcRenderer} from 'electron';
 import Pill from './Pill.vue'
 
 export default {
     components: { Pill },
-
+    
     data: function() {
         return {
             files: [],
-            groupedWords: [
-                { name: 'i', amount: 1234 },
-                { name: 'you', amount: 900 },
-                { name: 'he', amount: 853 },                
-            ]
-
+            groupedWords: []
         }
     },
 
     methods: {
-        processaArquivo() {
-            console.log(this.files)
+        processaArquivo() {    
+            const paths = this.files.map(f => f.path)            
+            ipcRenderer.send('process-subtitles', paths)
+            ipcRenderer.on('process-subtitles', (event, resp) => {
+                this.groupedWords = resp                
+            })
         }        
     }
 

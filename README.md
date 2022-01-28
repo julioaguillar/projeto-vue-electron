@@ -1,24 +1,21 @@
-# projeto-vue-electron
+# Aplicação Desktop com JavaScript, Electron JS e Vue JS
 
-## Project setup
-```
-npm install
-```
+Desenvolvimento de uma sistema para aplicação de conhecimento adiquirido através de curso sobre o tema
+O sistema desenvolvido irá processar várias legendas no formato SRT e procurar e agrupar quais são as palavras mais utilizadas nas legendas fornecidas.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Para construção do sistema foi utilizado
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Electron JS
+- VueJS
+- Vuetify
+- Promises
+- Regex
+- Processamento de arquivos
+- Map, reduce, filter
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Conhecimentos adquiridos
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Criar aplicações Desktop com JavaScript
+* O framework Electron JS
+* Usar Vue JS em aplicações Desktop
+
