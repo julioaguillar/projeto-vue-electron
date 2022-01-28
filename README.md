@@ -1,7 +1,7 @@
 # Aplicação Desktop com JavaScript, Electron JS e Vue JS
 
-Desenvolvimento de uma sistema para aplicação de conhecimento adiquirido através de curso sobre o tema
-O sistema desenvolvido irá processar várias legendas no formato SRT e procurar e agrupar quais são as palavras mais utilizadas nas legendas fornecidas.
+Desenvolvimento de um sistema para aplicação de conhecimento adquirido através de curso sobre o tema
+O sistema desenvolvido processará várias legendas no formato SRT, procurar e agrupar quais são as palavras mais utilizadas nas legendas fornecidas.
 
 ## Para construção do sistema foi utilizado
 
